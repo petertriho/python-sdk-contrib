@@ -1,5 +1,27 @@
 # Changelog
 
+## [0.2.0](https://github.com/petertriho/python-sdk-contrib/compare/openfeature-provider-flipt/v0.1.3...openfeature-provider-flipt/v0.2.0) (2026-02-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* drop Python 3.8 support ([#187](https://github.com/petertriho/python-sdk-contrib/issues/187))
+
+### chore
+
+* drop Python 3.8 support ([#187](https://github.com/petertriho/python-sdk-contrib/issues/187)) ([b55cc1e](https://github.com/petertriho/python-sdk-contrib/commit/b55cc1e0f823d05a330c12af6861dbd3bec69c3a))
+
+
+### 🐛 Bug Fixes
+
+* replace project.scripts with poethepoet ([#335](https://github.com/petertriho/python-sdk-contrib/issues/335)) ([61add22](https://github.com/petertriho/python-sdk-contrib/commit/61add22b975140ccd39b618bf70efeeecbdc25c3))
+
+
+### ✨ New Features
+
+* Add Flipt provider ([#143](https://github.com/petertriho/python-sdk-contrib/issues/143)) ([599a6dd](https://github.com/petertriho/python-sdk-contrib/commit/599a6dd0a5abffedaa8a176933547edad19e53f4))
+* migrate to uv ([#293](https://github.com/petertriho/python-sdk-contrib/issues/293)) ([9590554](https://github.com/petertriho/python-sdk-contrib/commit/9590554be4c8a7f77b0c0f20d6b48076c9870f52))
+
 ## [0.1.3](https://github.com/open-feature/python-sdk-contrib/compare/openfeature-provider-flipt/v0.1.2...openfeature-provider-flipt/v0.1.3) (2025-01-21)
 
 
