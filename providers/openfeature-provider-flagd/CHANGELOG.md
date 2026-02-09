@@ -1,5 +1,67 @@
 # Changelog
 
+## [0.3.0](https://github.com/petertriho/python-sdk-contrib/compare/openfeature-provider-flagd/v0.2.7...openfeature-provider-flagd/v0.3.0) (2026-02-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* drop Python 3.8 support ([#187](https://github.com/petertriho/python-sdk-contrib/issues/187))
+* **flagd-rpc:** add events for rpc mode, some breaking config fixes ([#108](https://github.com/petertriho/python-sdk-contrib/issues/108))
+
+### chore
+
+* drop Python 3.8 support ([#187](https://github.com/petertriho/python-sdk-contrib/issues/187)) ([b55cc1e](https://github.com/petertriho/python-sdk-contrib/commit/b55cc1e0f823d05a330c12af6861dbd3bec69c3a))
+
+
+### 🐛 Bug Fixes
+
+* add retry policy to grpc calls. ([#261](https://github.com/petertriho/python-sdk-contrib/issues/261)) ([07ee909](https://github.com/petertriho/python-sdk-contrib/commit/07ee90925126817b6e17387182656a2a0f5603e3))
+* **build:** bump protobuf package version to a compatible version ([#327](https://github.com/petertriho/python-sdk-contrib/issues/327)) ([223a903](https://github.com/petertriho/python-sdk-contrib/commit/223a9037cea6c7ac6b1c9bb7a159987e592ce5a4))
+* **flagd:** Add upperbound to protobuf version to reduce potential conflict with other version ([5ad2896](https://github.com/petertriho/python-sdk-contrib/commit/5ad289683a0d9128a53d142d2804f9fffb9dd36f))
+* **flagd:** adjust flagd to updated error codes ([#285](https://github.com/petertriho/python-sdk-contrib/issues/285)) ([64d755b](https://github.com/petertriho/python-sdk-contrib/commit/64d755b869a076216a91b2d409b1ba5d627ebe08))
+* **flagd:** fix parameter name inconsistency with SDK version 0.8.1 ([#232](https://github.com/petertriho/python-sdk-contrib/issues/232)) ([55ee420](https://github.com/petertriho/python-sdk-contrib/commit/55ee42087bd9a948a130b08671395138baa33621))
+* **flagd:** fix protobuf version for file generation to lowest 5.x version ([#280](https://github.com/petertriho/python-sdk-contrib/issues/280)) ([5ad2896](https://github.com/petertriho/python-sdk-contrib/commit/5ad289683a0d9128a53d142d2804f9fffb9dd36f))
+* **flagd:** fix semver version parsing to allow "v" prefix([#106](https://github.com/petertriho/python-sdk-contrib/issues/106)) ([#107](https://github.com/petertriho/python-sdk-contrib/issues/107)) ([93fee85](https://github.com/petertriho/python-sdk-contrib/commit/93fee8593c8c278dff6371b68b21366bea9d5f01))
+* **flagd:** handle falsy target values correctly ([#214](https://github.com/petertriho/python-sdk-contrib/issues/214)) ([fafd099](https://github.com/petertriho/python-sdk-contrib/commit/fafd099f07365a7d0032e8215477b51bfe90c01a))
+* **flagd:** improve targeting and fix fractional issue([#92](https://github.com/petertriho/python-sdk-contrib/issues/92)) ([#105](https://github.com/petertriho/python-sdk-contrib/issues/105)) ([eb31b83](https://github.com/petertriho/python-sdk-contrib/commit/eb31b8324662df113cd27205eb12f09a1cf30b06))
+* **flagd:** reduce loglevel of expected logs ([#277](https://github.com/petertriho/python-sdk-contrib/issues/277)) ([cca865f](https://github.com/petertriho/python-sdk-contrib/commit/cca865f490cc699ecf038c934dfccacad9bda8d2))
+* include proto file in build for openfeature-provider-flagd ([#45](https://github.com/petertriho/python-sdk-contrib/issues/45)) ([7783cc8](https://github.com/petertriho/python-sdk-contrib/commit/7783cc8e7fb8fe0f9b812938efcd1f4c07e3ff68))
+* include targetingKey in flagd serialized evaluation context ([#58](https://github.com/petertriho/python-sdk-contrib/issues/58)) ([ddd79a4](https://github.com/petertriho/python-sdk-contrib/commit/ddd79a49b765aa0679a2c1938447c61b37b6d0fe))
+* object resolution for RPC and Object types, add test-harness ([ca76802](https://github.com/petertriho/python-sdk-contrib/commit/ca7680242085fb9b77d9b0844147468544010074))
+* object resolution for RPC and Object types, add test-harness. ([#103](https://github.com/petertriho/python-sdk-contrib/issues/103)) ([ca76802](https://github.com/petertriho/python-sdk-contrib/commit/ca7680242085fb9b77d9b0844147468544010074))
+* remove mention of local eval in readme ([41df80e](https://github.com/petertriho/python-sdk-contrib/commit/41df80e1b3044356e3b228a484f3a13c92068d91))
+* remove modifications to license files ([#81](https://github.com/petertriho/python-sdk-contrib/issues/81)) ([a23f61e](https://github.com/petertriho/python-sdk-contrib/commit/a23f61e1c14c70e45a4bce4a014d5599813f1d28))
+* remove setup from flagd tests ([#39](https://github.com/petertriho/python-sdk-contrib/issues/39)) ([85661ff](https://github.com/petertriho/python-sdk-contrib/commit/85661ff170b378d37b0a3d5d0a955dad3417f538))
+* replace project.scripts with poethepoet ([#335](https://github.com/petertriho/python-sdk-contrib/issues/335)) ([61add22](https://github.com/petertriho/python-sdk-contrib/commit/61add22b975140ccd39b618bf70efeeecbdc25c3))
+* respect timeout setting in grpc method calls ([#60](https://github.com/petertriho/python-sdk-contrib/issues/60)) ([0149cf7](https://github.com/petertriho/python-sdk-contrib/commit/0149cf7ced8116f54a9b220549834a1970460bd9))
+* return proper metadata object in FlagdProvider ([#59](https://github.com/petertriho/python-sdk-contrib/issues/59)) ([6508234](https://github.com/petertriho/python-sdk-contrib/commit/6508234486ba0b650e849cbee22505988233131a))
+
+
+### ✨ New Features
+
+* add support for flagd flag metadata ([#215](https://github.com/petertriho/python-sdk-contrib/issues/215)) ([6dc72c0](https://github.com/petertriho/python-sdk-contrib/commit/6dc72c0e16b01cd40e6c103884a2d457e95871d1))
+* adjust to flagd metadata toggle ([#287](https://github.com/petertriho/python-sdk-contrib/issues/287)) ([6ac014d](https://github.com/petertriho/python-sdk-contrib/commit/6ac014d1af7a90b09203ae38dfd60bba275bc9a9))
+* attempts with connection improvements ([#118](https://github.com/petertriho/python-sdk-contrib/issues/118)) ([8e23a70](https://github.com/petertriho/python-sdk-contrib/commit/8e23a700244a85291671b41083b1be82670cf79d))
+* Change fractional custom op from percentage-based to relative weighting. ([#91](https://github.com/petertriho/python-sdk-contrib/issues/91)) ([7b34822](https://github.com/petertriho/python-sdk-contrib/commit/7b34822afdabfb89e991ae81a91681cafcbdfbd3))
+* **flagd-rpc:** add caching  ([#110](https://github.com/petertriho/python-sdk-contrib/issues/110)) ([16179e3](https://github.com/petertriho/python-sdk-contrib/commit/16179e3e68eb5bc18b5d12ec80caf511b7dec762))
+* **flagd-rpc:** add events for rpc mode, some breaking config fixes ([#108](https://github.com/petertriho/python-sdk-contrib/issues/108)) ([b62d3d1](https://github.com/petertriho/python-sdk-contrib/commit/b62d3d1ab5ce40f275e795ae2682ae3fe315f431))
+* **flagd-rpc:** adding grace attempts ([#117](https://github.com/petertriho/python-sdk-contrib/issues/117)) ([41d0ad8](https://github.com/petertriho/python-sdk-contrib/commit/41d0ad8b6a5b32272c75684cfcbabffb57e53470))
+* **flagd:** add custom cert path ([#131](https://github.com/petertriho/python-sdk-contrib/issues/131)) ([f50351a](https://github.com/petertriho/python-sdk-contrib/commit/f50351a0435064111fb98753a49139fafa8307e6))
+* **flagd:** Add features to customize auth to Sync API servers ([#203](https://github.com/petertriho/python-sdk-contrib/issues/203)) ([5151e94](https://github.com/petertriho/python-sdk-contrib/commit/5151e941d229101bdbcc5b40f570f69d77ddda7b))
+* **flagd:** Add in-process evaluator ([#104](https://github.com/petertriho/python-sdk-contrib/issues/104)) ([01285e7](https://github.com/petertriho/python-sdk-contrib/commit/01285e726baa3acbf1b5d6ed0e802be54342a6d9))
+* **flagd:** add ssl cert path option ([f50351a](https://github.com/petertriho/python-sdk-contrib/commit/f50351a0435064111fb98753a49139fafa8307e6))
+* **flagd:** Context value hydration ([#195](https://github.com/petertriho/python-sdk-contrib/issues/195)) ([4fa619b](https://github.com/petertriho/python-sdk-contrib/commit/4fa619b93faf1d1f62a9ead99f33baa21c04e267))
+* **flagd:** Implement dual-mode selector handling (header and body) for in-process mode in python-sdk-contrib ([#320](https://github.com/petertriho/python-sdk-contrib/issues/320)) ([9ad25a4](https://github.com/petertriho/python-sdk-contrib/commit/9ad25a4ddebb91e4383b108d478288a782ede796))
+* **flagd:** migrate to new provider mode file and update e2e tests ([#121](https://github.com/petertriho/python-sdk-contrib/issues/121)) ([eed1ee0](https://github.com/petertriho/python-sdk-contrib/commit/eed1ee053191ecaca21f82749da9fe443712206f))
+* **flagd:** support Python 3.14 for flagd ([#307](https://github.com/petertriho/python-sdk-contrib/issues/307)) ([a60b237](https://github.com/petertriho/python-sdk-contrib/commit/a60b23756fce05220201a0d0660be2a06a6807f4))
+* **flagd:** use test-harness version number for integration tests ([#120](https://github.com/petertriho/python-sdk-contrib/issues/120)) ([3c3e9c8](https://github.com/petertriho/python-sdk-contrib/commit/3c3e9c86e7111fc165eebd650453069a0e8f4dae))
+* implement environment-variable based config ([#62](https://github.com/petertriho/python-sdk-contrib/issues/62)) ([a8b78b2](https://github.com/petertriho/python-sdk-contrib/commit/a8b78b28fe44ca712b00db04ac1a23a9c9bc6d9b))
+* in-process offline flagd resolver ([#74](https://github.com/petertriho/python-sdk-contrib/issues/74)) ([8cea506](https://github.com/petertriho/python-sdk-contrib/commit/8cea5066ee96f637f3108a9dc3a7539c450a14be))
+* migrate to uv ([#293](https://github.com/petertriho/python-sdk-contrib/issues/293)) ([9590554](https://github.com/petertriho/python-sdk-contrib/commit/9590554be4c8a7f77b0c0f20d6b48076c9870f52))
+* replace schema with tls argument in FlagdProvider constructor ([#61](https://github.com/petertriho/python-sdk-contrib/issues/61)) ([7a7210f](https://github.com/petertriho/python-sdk-contrib/commit/7a7210f6f63a9cba886f4d512c01ebac39d910a9))
+* Update python-sdk ([#289](https://github.com/petertriho/python-sdk-contrib/issues/289)) ([f2028f5](https://github.com/petertriho/python-sdk-contrib/commit/f2028f5f81824310a842507a3127a3bb9bc8a984))
+* Use time.monotonic to avoid endless loop when using time machine ([#330](https://github.com/petertriho/python-sdk-contrib/issues/330)) ([a424cdc](https://github.com/petertriho/python-sdk-contrib/commit/a424cdc68cba4dd3da28a9b18ca10ffbaf1e2689))
+
 ## [0.2.7](https://github.com/open-feature/python-sdk-contrib/compare/openfeature-provider-flagd/v0.2.6...openfeature-provider-flagd/v0.2.7) (2026-01-31)
 
 
