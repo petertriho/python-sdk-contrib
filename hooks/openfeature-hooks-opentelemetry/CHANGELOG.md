@@ -1,5 +1,30 @@
 # Changelog
 
+## [0.4.0](https://github.com/petertriho/python-sdk-contrib/compare/openfeature-hooks-opentelemetry/v0.3.0...openfeature-hooks-opentelemetry/v0.4.0) (2026-02-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* update opentelemetry hook to latest version of semantic conventions ([#326](https://github.com/petertriho/python-sdk-contrib/issues/326))
+* drop Python 3.8 support ([#187](https://github.com/petertriho/python-sdk-contrib/issues/187))
+
+### chore
+
+* drop Python 3.8 support ([#187](https://github.com/petertriho/python-sdk-contrib/issues/187)) ([b55cc1e](https://github.com/petertriho/python-sdk-contrib/commit/b55cc1e0f823d05a330c12af6861dbd3bec69c3a))
+
+
+### 🐛 Bug Fixes
+
+* fix types for hints in OTel TracingHook ([#73](https://github.com/petertriho/python-sdk-contrib/issues/73)) ([24260fb](https://github.com/petertriho/python-sdk-contrib/commit/24260fb519d18590d82e9aae1cf824b9e6ca7f17))
+* remove modifications to license files ([#81](https://github.com/petertriho/python-sdk-contrib/issues/81)) ([a23f61e](https://github.com/petertriho/python-sdk-contrib/commit/a23f61e1c14c70e45a4bce4a014d5599813f1d28))
+* replace project.scripts with poethepoet ([#335](https://github.com/petertriho/python-sdk-contrib/issues/335)) ([61add22](https://github.com/petertriho/python-sdk-contrib/commit/61add22b975140ccd39b618bf70efeeecbdc25c3))
+
+
+### ✨ New Features
+
+* migrate to uv ([#293](https://github.com/petertriho/python-sdk-contrib/issues/293)) ([9590554](https://github.com/petertriho/python-sdk-contrib/commit/9590554be4c8a7f77b0c0f20d6b48076c9870f52))
+* update opentelemetry hook to latest version of semantic conventions ([#326](https://github.com/petertriho/python-sdk-contrib/issues/326)) ([a2ec682](https://github.com/petertriho/python-sdk-contrib/commit/a2ec682a709a4721f8362cfa6a9e6037937761ee))
+
 ## [0.3.0](https://github.com/open-feature/python-sdk-contrib/compare/openfeature-hooks-opentelemetry/v0.2.0...openfeature-hooks-opentelemetry/v0.3.0) (2025-12-16)
 
 
